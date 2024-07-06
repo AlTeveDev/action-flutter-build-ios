@@ -44,10 +44,6 @@ runs:
       run: dart pub global activate flutterfire_cli 0.3.0-dev.19 --overwrite
       shell: bash
 
-    - name: List profiles
-      run: cd ~/Library/MobileDevice/Provisioning\ Profiles && ls
-      shell: bash
-
     - name: Build
       run: ${{ inputs.build-cmd }}
       shell: bash
